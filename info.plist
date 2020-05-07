@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>frys@nhelaa.pbz</string>
+	<key>contactName</key>
+	<string>Aurynn Shaw</string>
+	<key>description</key>
+	<string>Nginx support for TextMate 2.</string>
+	<key>name</key>
+	<string>nginx</string>
+	<key>uuid</key>
+	<string>6FD7FE9E-36BC-4F29-80FC-A4DC389203D1</string>
+</dict>
+</plist>
