@@ -110,9 +110,26 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#string_double_quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#comment_line</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#location_keywords</string>
+				</dict>
 			</array>
+		</dict>
+		<key>location_keywords</key>
+		<dict>
+			<key>match</key>
+			<string>\b(try_files|add_header|root|try_files|proxy_set_header|proxy_pass|proxy_buffering|proxy_redirect|proxy_http_version|tcp_nodelay)\b</string>
+			<key>name</key>
+			<string>keyword.control.keyword.nginx.location</string>
+			<key>patterns</key>
+			<array/>
 		</dict>
 		<key>numeric</key>
 		<dict>
@@ -188,9 +205,45 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#string_double_quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#comment_line</string>
 				</dict>
 			</array>
+		</dict>
+		<key>string_double_quoted</key>
+		<dict>
+			<key>begin</key>
+			<string>(")</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.nginx</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>single quoted strings</string>
+			<key>end</key>
+			<string>(\")</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.nginx</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.unclosed-string.nginx</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.nginx</string>
 		</dict>
 		<key>string_single_quoted</key>
 		<dict>
